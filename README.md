@@ -7,6 +7,10 @@ These scripts are used to do some basic monoalphabetic substitution stuff.  This
                 -c or --chunk-size and an N for the size.  The output for these might cause the terminal to over buffer so
                 you can either output to a file by piping to a file or you can use -t or --top to get the top N most common. <br />
                 
+                Example Usages: 
+                python freqan.py file.txt
+                python freqan.py -c 3 file.txt
+                
 **monosub.py** \- Allows you to encrypt or decrypt based on a given key (alphabet).  This script requires 3 positional arguments
                  which are as follows. <br />
                  1. _mode_     \- This argument tells the script whether to encrypt or decrypt.  Pass either encrypt, enc, decrypt,
@@ -15,4 +19,11 @@ These scripts are used to do some basic monoalphabetic substitution stuff.  This
                  3. _filename_ \- The file to encrypt or decrypt using the key.  You can use hyphen for stdin and CTRL-D (twice)
                  to end the input. <br >
                  
+                 Example Usages:
+                 python monosub.py enc JGVKMYXTPFNWUDEQBRCLZSAIHO file.txt
+                 python monosub.py decrypt JGVKMYXTPFNWUDEQBRCLZSAIHO file.txt
+                 
 **genkey.py** \- If you want to generate a random key for a monoalphabetic substitution cipher, simply run this script.
+                  
+                  Example Usage:
+                  python genkey.py
