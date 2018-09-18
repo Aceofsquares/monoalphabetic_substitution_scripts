@@ -28,8 +28,3 @@ These scripts are used to do some basic monoalphabetic substitution stuff.  This
                   Example Usage:
                   python genkey.py
                   
-For fun, find some text and put it into a file.  Then run
-
-  `python monosub.py enc $(python genkey.py) plain.txt`
-  
-Then try to figure out the key that was generated.
