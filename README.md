@@ -11,7 +11,7 @@ These scripts are used to do some basic monoalphabetic substitution stuff.  This
                  which are as follows. <br />
                  1. _mode_     \- This argument tells the script whether to encrypt or decrypt.  Pass either encrypt, enc, decrypt,
                  or dec as the mode. <br />
-                 2. _key_      \-  The key is the alphabetic cipher to use for encryption and decryption.
+                 2. _key_      \-  The key is the alphabetic cipher to use for encryption and decryption.<br />
                  3. _filename_ \- The file to encrypt or decrypt using the key.  You can use hyphen for stdin and CTRL-D (twice)
                  to end the input. <br >
                  
