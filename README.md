@@ -20,10 +20,16 @@ These scripts are used to do some basic monoalphabetic substitution stuff.  This
                  to end the input. <br >
                  
                  Example Usages:
-                 python monosub.py enc JGVKMYXTPFNWUDEQBRCLZSAIHO file.txt
-                 python monosub.py decrypt JGVKMYXTPFNWUDEQBRCLZSAIHO file.txt
+                 python monosub.py enc JGVKMYXTPFNWUDEQBRCLZSAIHO plain.txt > encrypted.txt
+                 python monosub.py decrypt JGVKMYXTPFNWUDEQBRCLZSAIHO encrypted.txt > decrypted.txt
                  
 **genkey.py** \- If you want to generate a random key for a monoalphabetic substitution cipher, simply run this script.
                   
                   Example Usage:
                   python genkey.py
+                  
+For fun, find some text and put it into a file.  Then run
+
+  `python monosub.py enc $(python genkey.py) plain.txt`
+  
+Then try to figure out the key that was generated.
